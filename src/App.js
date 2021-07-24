@@ -16,6 +16,9 @@ let arr6 = [1,2,3,4,5,6,7,8,9];
 let arr7 = arr6.slice(2,5)
 let arr8 = [1,2,3,4];
 let arr9 = [...arr8];
+let arr10 = [1,2,3,4,5,6,7,8,9];
+let arr11 = arr10.indexOf(4);
+let obj1 = {name: "Neha", place: "Bengaluru"}
 
 function App() {
   return (
@@ -40,7 +43,12 @@ function App() {
         <h4>arr1 = [1,2,3,4]</h4>
         <h5>arr2 = [...arr1]</h5>
         arr2 = {JSON.stringify(arr9)}
-       
+       <h3>indexOf, To check the index of element in an array eg, arr = [1,2,3,4,5,6,7,8,9]</h3>
+       Index of 4 = {arr11} .....#arr.indexOf(4)
+       <h3>Delete pty from object obj using "delete obj.name"</h3>
+       {delete obj1.name} 
+       {/* {obj1} .....# delete obj.name */}
+       <h3>Object.keys(obj1)..... To generate all the keys of object</h3>
       </header>
     </div>
   );
