@@ -12,6 +12,11 @@ let arr4 = [1,2,3,4,5,6,7,8,9];
 arr4.splice(0,3);
 let arr5 = [1,2,3,4,5,6,7,8,9];
 arr5.splice(0,1,2)
+let arr6 = [1,2,3,4,5,6,7,8,9];
+let arr7 = arr6.slice(2,5)
+let arr8 = [1,2,3,4];
+let arr9 = [...arr8];
+
 function App() {
   return (
     <div className="App">
@@ -28,7 +33,13 @@ function App() {
         <h3>Remove first 3 items from array using splice(), arr = [1,2,3,4,5,6,7,8,9] </h3>
         {JSON.stringify(arr4)} .....# arr.splice(0,3)
         <h3>Remove first element from array using splice(), arr = [1,2,3,4,5,6,7,8,9] and add "2" </h3>
-        {JSON.stringify(arr5)}
+        {JSON.stringify(arr5)} .....# arr.splice(0,1,2)
+        <h3>Slice arr (and copy that array in new array) from 3,4,5 in arr = [1,2,3,4,5,6,7,8,9]</h3>
+        {JSON.stringify(arr7)} .....# arr.slice(2,5)
+        <h3>Copy array using spread operator</h3>
+        <h4>arr1 = [1,2,3,4]</h4>
+        <h5>arr2 = [...arr1]</h5>
+        arr2 = {JSON.stringify(arr9)}
        
       </header>
     </div>
